@@ -1,0 +1,75 @@
+﻿@model List<Cosmetic.Models.CartItem>
+@{
+    ViewData["Title"] = "CheckoutSuccess";
+    Layout = "~/Views/Shared/_Frontend.cshtml";
+}
+
+@{
+    double tong = 0;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" style="height:300px;">
+            <img src="~/images/icons8-checkmark-128.png" alt="Thanh Toán Thất Bại!!!" | PNG All style="height:300px;">
+        </div>
+        <div class="col-sm-6">
+            <h1>Thanh toán thành công!!!</h1>
+            <h2>Danh sách sản phẩm</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá Tiền</th>
+                    </tr>
+                </thead>
+                @if (Context.Session.Get<List<CartItem>>("GioHang") != null)
+                {
+                    List<CartItem> Model = Context.Session.Get<List<CartItem>>("GioHang");
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td><a href="#">@item.TenHh</a></td>
+                                <td style="text-align:center">@item.SoLuong</td>
+                                <td><a href="#">@item.GiaBan đ</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        @foreach (var item in Model)
+                        {
+                            tong = tong + item.ThanhTien;
+                        }
+                        <tr>
+                            <th colspan="4">Tổng cộng</th>
+                            <th>@tong.ToString("#,##0")đ</th>
+                        </tr>
+                        <tr>
+                            <th colspan="4">Mã đơn hàng:</th>
+                            <th><span>IM</span>@Math.Round(tong * 3, 5)</th>
+                        </tr>
+                    </tfoot>
+                }
+                else
+                {
+                    <tbody>
+                        <tr>
+                            <td colspan="6" style="text-align:center">
+                                <br /><br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bạn chưa chọn sản phẩm nào<br /><br /><br />
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+
+            </table>
+            <a href="https://localhost:44345/" class="btn btn-primary">Quay Lại</a>
+            
+        </div>
+
+    </div>
+
+
+</div>
+
+

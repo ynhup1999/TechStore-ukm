@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "ChiTiet";
+    Layout = "~/Views/Shared/_Frontend.cshtml";
+}
+
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                        <li aria-current="page" class="breadcrumb-item active">Review</li>
+                    </ol>
+                </nav>
+            </div>
+            <div id="blog-post" class="col-lg-9">
+                <div class="box">
+                    <h1>Review Top 7 điện thoại giá dưới 5 triệu đáng mua nhất năm 2020</h1>
+                    <p class="author-date">Bởi <a href="#">Nhu Pham</a> |  20 Tháng 12, 2021</p>
+                    <p class="lead">
+                        Nên mua điện thoại nào tầm 5 triệu là câu hỏi được nhiều người quan tâm. Hiện nay có nhiều mẫu smartphone ở phân khúc tầm trung, giá rẻ nhưng chất lượng vẫn rất tốt, đáp ứng hầu như tất cả các nhu cầu sử dụng của người dùng
+                        T E C H Store hôm nay sẽ giới thiệu đến bạn Top 3 điện thoại giá dưới 5 triệu đáng mua nhất 2020. Cùng tham khảo ngay dưới đây nhé.
+                    </p>
+                    <div id="post-content">
+                        <p> So sánh mức giá cùng những tính năng, hiệu suất mà máy mang lại, đây xứng đáng là những chiếc smartphone giá rẻ, tầm trung đáng để sở hữu. 
+                        Hy vọng thông tin chúng tôi cung cấp là bổ ích cho bạn</p>
+                        <h2>Realme A50 64GB</h2>
+
+                        <blockquote class="blockquote">
+                            <p>Samsung là một trong những dòng điện thoại được ưa chuộng bậc nhất hiện nay. 
+                            Nếu là một tín đồ của Samsung và đang có nhu cầu điện thoại giá dưới 5 triệu đồng thì Galaxy A50 64GB sẽ là gợi ý tuyệt vời nhất cho bạn.</p>
+                            <p><img src="~/images/top-7-dien-thoai-gia-duoi-5-trieu-dang-mua-nhat-10.jpg" alt="Example blog post alt" class="img-fluid"></p>
+                        </blockquote>
+                 
+                        <h2>OPPO A31 128GB</h2>
+
+                        <blockquote class="blockquote">
+                            <p>Điện thoại OPPO A31 sở hữu màn hình LCD kích thước lên đến 6.5 inch, độ phân giải HD+ cho góc nhìn rộng, độ sáng cao, giúp bạn trải nghiệm hình ảnh chất lượng tuyệt vời, 
+                            độ tương phản cao và màu sắc chân thực.</p>
+                            <p><img src="~/images/top-7-dien-thoai-gia-duoi-5-trieu-dang-mua-nhat-4.jpg" alt="Example blog post alt" class="img-fluid"></p>
+                        </blockquote>
+                        
+                        <h2>Điện thoại Nokia 7.2</h2>
+
+                        <blockquote class="blockquote">
+                        
+                            <p>Nếu bạn là một người đam mê chụp ảnh thì chiếc điện thoại Nokia 7.2 là một lựa chọn phù hợp ở mức giá tầm trung. Chiếc smartphone này sở hữu cụm 3 camera ZEISS được thiết kế theo phong cách Bắc Âu rất đẹp và lịch lãm. Hình ảnh chụp từ Nokia 7.2 cho chất lượng tốt, đặc sắc, chi ti</p>
+                            <p><img src="~/images/top-7-dien-thoai-gia-duoi-5-trieu-dang-mua-nhat-6.jpg" alt="Example blog post alt" class="img-fluid"></p>
+                        </blockquote>
+                       
+                    </div>
+                    <!-- /#post-content-->
+                    <!-- /#comment-form-->
+                </div>
+                <!-- /.box-->
+            </div>
+            <!-- /#blog-post-->
+            <div class="col-lg-3">
+                <!--
+                *** BLOG MENU ***
+                _________________________________________________________
+                -->
+                <div class="card sidebar-menu mb-4">
+                    <div class="card-header">
+                        <h3 class="h4 panel-title">Blog</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="nav flex-column nav-pills">
+                            <li><a asp-action="Index" asp-controller="Blog" class="nav-link">Review sản phẩm hot </a></li>
+                            <li><a asp-action="Index" asp-controller="Blog" class="nav-link">Blog giảm giá</a></li>
+                            <li><a asp-action="Index" asp-controller="Blog" class="nav-link active">Game điện thoại</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.col-lg-3-->
+                <!-- *** BLOG MENU END ***-->
+                <div class="banner"><a href="#"><img src="~/Hinh/beauty/banner-iphone-12.jpg" alt="sales 2014" class="img-fluid"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+

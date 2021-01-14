@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Frontend.cshtml";
+}
+
+
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li aria-current="page" class="breadcrumb-item active">Khác</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <!--
+            *** LEFT COLUMN ***
+            _________________________________________________________
+            -->
+            <div id="blog-listing" class="col-lg-9">
+                <div class="box">
+                    <h1>BLOG DI ĐỘNG</h1>
+
+                </div>
+                <!-- post-->
+                <div class="post">
+                    <h2><a href="post.html">Top 3 điện thoại giá dưới 5 triệu </a></h2>
+                    <p class="author-category">Bởi<a href="#"> Nhu Pham </a> trong <a href="">Khác</a></p>
+                    <hr>
+                    <p class="date-comments"><a href="post.html"><i class="fa fa-calendar-o"></i>20 Tháng 12, 2021</a><a href="post.html"><i class="fa fa-comment-o"></i> 0 bình luận</a></p>
+                    <div class="image"><a href="post.html"><img src="~/images/dt3.jpg" alt="Example blog post alt" class="img-fluid"></a></div>
+                    <p class="intro">
+                        Nên mua điện thoại nào tầm 5 triệu là câu hỏi được nhiều người quan tâm. Hiện nay có nhiều mẫu smartphone ở phân khúc tầm trung, giá rẻ nhưng chất lượng vẫn rất tốt, đáp ứng hầu như tất cả các nhu cầu sử dụng của người dùng
+                        T E C H Store hôm nay sẽ giới thiệu đến bạn Top 3 điện thoại giá dưới 5 triệu đáng mua nhất 2020. Cùng tham khảo ngay dưới đây nhé.
+                    </p>
+                    <p class="read-more"><a asp-action="ChiTiet" asp-controller="Blog" class="btn btn-primary">Xem tiếp</a></p>
+                </div>
+                <!-- post        -->
+                <div class="post">
+                    <h2><a href="post.html">Tự thiết kế ốp lưng cho riêng bạn</a></h2>
+                    <p class="author-category">Bởi <a asp-action="ChiTiet" asp-controller="Blog"> Nhu Pham </a> trong <a href="">Khác</a></p>
+                    <hr>
+                    <p class="date-comments"><a asp-action="ChiTiet" asp-controller="Blog"><i class="fa fa-calendar-o"></i> 21 Thang 12 , 2018</a><a href="post.html"><i class="fa fa-comment-o"></i> 0 bình luận</a></p>
+                    <div class="image"><a asp-action="ChiTiet" asp-controller="Blog"><img src="~/images/dt1.png" alt="Example blog post alt" class="img-fluid"></a></div>
+                    <p class="intro">
+                        Tự thiết kế ốp lưng là điều mà giới trẻ hiện này rất thích để tạo ra một ốp lưng bảo vệ cho ” con cưng” của mình một lớp vỏ bảo vệ theo phong cách ” không đụng hàng”
+
+                        TỰ THIẾT KẾ ỐP LƯNG TẠI WEBSITE CHÚNG TÔI:
+                        Phần mềm dễ dàng sử dụng, thiết kế thông minh tự động.
+                        Khuôn hình mẫu phù hợp cho các đời iphone.
+                        Bạn chỉ cần chọn hình ảnh yêu thích, phần mềm chúng tôi sẽ làm cho bạn.
+                        Không tốn bất cứ chi phí nào cho việc thiết kế.
+                        Nếu bạn cần hỗ trợ thiết kế ốp lưng, hãy nhắn tin cho chúng tôi hoặc gọi Hotline: 090 118 4647
+
+                        Còn chờ gì nữa mà không tự thiết kế cho ” con cưng” của mình một ốp bảo vệ thật cá tính.
+                    </p>
+                    <p class="read-more"><a asp-action="ChiTiet" asp-controller="Blog" class="btn btn-primary">Xem tiếp</a></p>
+                </div>
+                <div class="pager d-flex justify-content-between">
+                    <div class="previous"><a href="#" class="btn btn-outline-primary">← Trang trước</a></div>
+                    <div class="next disabled"><a href="#" class="btn btn-outline-secondary disabled">Trang kế →        </a></div>
+                </div>
+            </div>
+            <!-- /.col-lg-9-->
+            <!-- *** LEFT COLUMN END ***-->
+
+            <div class="col-lg-3">
+                <!--
+                *** BLOG MENU ***
+                _________________________________________________________
+                -->
+                <div class="card sidebar-menu mb-4">
+             
+                    <div class="card-body">
+                        <ul class="nav flex-column nav-pills">
+                            <li><a asp-action="Index" asp-controller="Blog" class="nav-link">Review sản phẩm hot </a></li>
+                            <li><a asp-action="Index" asp-controller="Blog" class="nav-link">Blog giảm giá</a></li>
+                            <li><a asp-action="Index" asp-controller="Blog" class="nav-link active">Khác</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.col-lg-3-->
+                <!-- *** BLOG MENU END ***-->
+                <div class="banner"><a href="#"><img src="~/Hinh/beauty/Blog-ca-nhan.jpg" alt="sales 2014" class="img-fluid"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
